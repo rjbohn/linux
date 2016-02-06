@@ -1,0 +1,29 @@
+git config --global user.email "email"
+git config --global user.name "user"
+git config --global push.default simple
+ssh-keygen -t rsa -C "email"
+sudo apt-get install xclip
+xclip -sel clip < ~/.ssh/id_rsa.pub
+then paste the key to github
+eval `ssh-agent -s`
+ssh-add
+
+git fetch --all
+git rebase origin/master
+git push --force origin fUser
+
+git branch
+git branch <new_branch>
+git checkout <existing-branch>
+
+git add .
+git pull --rebase origin master
+git commit -a -m "" 
+git push
+git stash save
+git stash pop
+
+git rm --cached -r mydirectory
+
+git fetch
+git pull
