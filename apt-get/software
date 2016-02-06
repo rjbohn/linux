@@ -1,24 +1,29 @@
-sudo apt-get install python-pip
-sudo pip install virtualenv
-sudo apt-get install clipit
-sudo apt-get install ubuntu-restricted-extras
-sudo apt-get install mc
-sudo apt-get install git
-sudo apt-get install p7zip-full p7zip-rar
-sudo apt-get install unrar-free
-sudo apt-get install virtualbox
 sudo apt-get install ansible
-sudo apt-get install vagrant
-sudo apt-get install calibre
-sudo apt-get install terminator
-
 sudo apt-get install build-essential
-sudo apt-get install linux-headers-`uname -r`
-sudo apt-get install python-pip
-sudo apt-get install libpq-dev
-sudo apt-get install python-dev
-sudo apt-get install python-psycopg2
-sudo apt-get install postgresql postgresql-contrib
+sudo apt-get install calibre
+sudo apt-get install clipit
+sudo apt-get install git
 sudo apt-get install libffi-dev libssl-dev libxml2-dev libxslt1-dev
+sudo apt-get install libpq-dev
+sudo apt-get install linux-headers-`uname -r`
+sudo apt-get install mc
+sudo apt-get install p7zip-full p7zip-rar
+sudo apt-get install postgresql postgresql-contrib
+sudo apt-get install python-dev
+sudo apt-get install python-pip
+sudo apt-get install python-psycopg2
 sudo apt-get install sqlite3 libsqlite3-dev
 sudo apt-get install sqlitebrowser
+sudo apt-get install terminator
+sudo apt-get install ubuntu-restricted-extras
+sudo apt-get install unrar-free
+sudo apt-get install vagrant
+sudo apt-get install virtualbox
+
+
+
+sudo apt-add-repository ppa:jtaylor/keepass
+sudo apt-get install keepass2
+sudo add-apt-repository ppa:webupd8team/sublime-text-3
+sudo apt-get install sublime-text-installer
+sudo add-apt-repository ppa:fkrull/deadsnakes-python2.7
