@@ -1,0 +1,41 @@
+WGET
+===========
+wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e robots=off -U mozilla http://0.0.0.0:5000
+wget --recursive --no-clobber --page-requisites --html-extension --convert-links --restrict-file-names=windows --domains thewebsite.com --no-parent http://0.0.0.0:5000
+wget --random-wait -r -p -e robots=off -U mozilla http://url
+wget --recursive --no-clobber --page-requisites --html-extension --convert-links --restrict-file-names=windows --domains domain.org --no-parent http://url
+wget --recursive --no-clobber --page-requisites --html-extension --convert-links --restrict-file-names=windows --domains domain.fr --no-parent http://url --user <user> --password <pass>
+
+
+CMDER:
+===========
+alias ls=ls -ls --color
+
+
+
+SUPERVISOR
+==========
+sudo supervisorctl stop YOURAPP:*
+
+
+TOR
+===
+sudo nano /etc/tor/torrc
+uncomment hashPassword
+uncomment ControlPort
+sudo /etc/init.d/tor restart
+
+tor --hash-password PASS
+
+libreoffice --headless -convert-to pdf <file_name>.docx -outdir output/path/for/pdf
+echo -n Welcome | md5sum
+
+grep -r "word" .
+
+gpasswd -a robert sudo
+
+$0 sublime text search and replace handy regex macro
+
+pexpect, upstart, fabric, or logstash Jenkins
+
+ver=2.`git log --oneline | wc -l | tr -d " "`-`git log --pretty=format:'%h' -n 1`@`date +"%Y%m%d%H%M"`
