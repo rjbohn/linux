@@ -22,7 +22,11 @@ sudo apt-get install virtualbox
 sudo apt-get install pidgin
 sudo apt-get install subversion
 
-
+sudo add-apt-repository ppa:mc3man/trusty-media
+sudo apt-get update
+sudo apt-get install vlc vlc-plugin-*
+https://github.com/exebetche/vlsub/
+cp vlsub.lua /usr/lib/vlc/lua/extensions/
 
 sudo apt-add-repository ppa:jtaylor/keepass
 sudo add-apt-repository ppa:fkrull/deadsnakes-python2.7
@@ -32,3 +36,5 @@ sudo add-apt-repository ppa:webupd8team/sublime-text-3
 sudo apt-get update
 sudo apt-get install sublime-text-installer
 sudo apt-get install keepass2
+
+
