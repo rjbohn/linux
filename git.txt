@@ -27,3 +27,8 @@ git rm --cached -r mydirectory
 
 git fetch
 git pull
+
+
+git stash
+git checkout other-branch
+git stash pop

@@ -41,3 +41,11 @@ pexpect, upstart, fabric, or logstash Jenkins
 ver=2.`git log --oneline | wc -l | tr -d " "`-`git log --pretty=format:'%h' -n 1`@`date +"%Y%m%d%H%M"`
 
 gsettings set org.gnome.desktop.wm.preferences button-layout ':minimize,maximize,close'
+
+
+
+
+
+pkg-config --cflags --libs glib-2.0 -> which automatically finds metadata about installed libraries.
+
+
