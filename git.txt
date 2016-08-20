@@ -11,6 +11,7 @@ ssh-add
 git fetch --all
 git rebase origin/master
 git push --force origin fUser
+git push -u origin <branch-name>
 
 git branch
 git branch <new_branch>
@@ -32,3 +33,10 @@ git pull
 git stash
 git checkout other-branch
 git stash pop
+
+
+# color git
+git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+git config --global color.ui auto
+git config --global color.branch auto
+git config --global color.status auto
