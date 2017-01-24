@@ -34,22 +34,31 @@ grep -rnw '/path/to/somewhere/' -e "pattern"
 
 
 
+
 libreoffice --headless -convert-to pdf <file_name>.docx -outdir output/path/for/pdf
+
 echo -n Welcome | md5sum
+
 grep -r "word" .
+
 gpasswd -a robert sudo
+
 $0 sublime text search and replace handy regex macro
+
 pexpect, upstart, fabric, or logstash Jenkins
-ver=2.`git log --oneline | wc -l | tr -d " "`-`git log --pretty=format:'%h' -n 1`@`date +"%Y%m%d%H%M"`
+
 gsettings set org.gnome.desktop.wm.preferences button-layout ':minimize,maximize,close'
+
 sudo apt-get install gnome-session-fallback
+
 pkg-config --cflags --libs glib-2.0 -> which automatically finds metadata about installed libraries.
 
-
-
-
 python setup.py install --record files.txt
+
 cat files.txt | xargs rm -rf
 
- 
- find . -name "*.pyc" -exec rm -rf {} \;
+find . -name "*.pyc" -exec rm -rf {} \;
+
+# turn off second monitor in i3
+xrandr --output VGA-0 --auto
+xrandr --output eDP-1-1 --off 
