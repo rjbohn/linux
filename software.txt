@@ -23,18 +23,20 @@ sudo apt-get install pidgin
 sudo apt-get install subversion
 sudo apt-get install keepassx
 sudo apt-get install ranger
+sudo apt-get install lfm
+sudo apt-get install filezilla
+sudo apt-get install htop
+sudo apt-get install vim
+
+# vlc
 sudo add-apt-repository ppa:mc3man/trusty-media
 sudo apt-get update
 sudo apt-get install vlc vlc-plugin-*
-https://github.com/exebetche/vlsub/
-cp vlsub.lua /usr/lib/vlc/lua/extensions/
-
 
 # sublime 3
 sudo add-apt-repository ppa:webupd8team/sublime-text-3
 sudo apt-get update
 sudo apt-get install sublime-text-installer
-
 
 #java
 sudo add-apt-repository ppa:webupd8team/java
