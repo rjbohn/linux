@@ -55,3 +55,6 @@ xrandr --output eDP-1-1 --off
 sudo apt-get install gnome-session-fallback
 gsettings set org.gnome.desktop.wm.preferences button-layout ':minimize,maximize,close'
 gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
+
+# add user to the sudoers
+gpasswd -a username sudo
