@@ -1,4 +1,4 @@
-linux
-=====
+My DotFiles
+============
 
-Linux system related codes, scripts and patches
+Linux configuration files, scripts and patches.

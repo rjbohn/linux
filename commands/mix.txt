@@ -51,3 +51,7 @@ gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
 
 # add user to the sudoers
 gpasswd -a username sudo
+
+# default file/folder permission
+find . -type d -exec chmod 0755 {} \;
+find . -type f -exec chmod 0644 {} \;
