@@ -6,13 +6,6 @@ wget --random-wait -r -p -e robots=off -U mozilla http://url
 wget --recursive --no-clobber --page-requisites --html-extension --convert-links --restrict-file-names=windows --domains domain.org --no-parent http://url
 wget --recursive --no-clobber --page-requisites --html-extension --convert-links --restrict-file-names=windows --domains domain.fr --no-parent http://url --user <user> --password <pass>
 
-
-CMDER:
-===========
-alias ls=ls -ls --color
-
-
-
 SUPERVISOR
 ==========
 sudo supervisorctl stop YOURAPP:*
