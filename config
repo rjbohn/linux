@@ -181,6 +181,7 @@ exec gnome-terminal
 exec subl
 exec nautilus --no-desktop
 exec vmware
+exec pmixer
 
 # Move apps to workspaces
 assign [class="Gnome-terminal"] $workspace2 

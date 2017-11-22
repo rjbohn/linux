@@ -55,3 +55,11 @@ gpasswd -a username sudo
 # default file/folder permission
 find . -type d -exec chmod 0755 {} \;
 find . -type f -exec chmod 0644 {} \;
+
+
+# nemo
+gsettings set org.nemo.desktop show-desktop-icons false
+
+sudo add-apt-repository ppa:webupd8team/nemo
+sudo apt-get update
+sudo apt-get install nemo nemo-fileroller
