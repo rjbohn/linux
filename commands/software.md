@@ -1,5 +1,5 @@
 ```
-sudo apt install calibre clipit git mc p7zip-full p7zip-rar python-pip htop pidgin unrar-free keepassx i3 vlc filezilla curl gparted zsh vim
+sudo apt install keychain feh pnmixer calibre clipit git mc p7zip-full p7zip-rar python-pip htop pidgin unrar-free keepassx i3 vlc filezilla curl gparted zsh vim
 ```
 
 ### sublime 3
