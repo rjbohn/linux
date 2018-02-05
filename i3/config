@@ -30,7 +30,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec zsh
+bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -97,12 +97,12 @@ bindsym Mod1+l exec ~/.bin/i3lock-fancy/lock
 # define variables
 set $workspace1 "1. code"
 set $workspace2 "2. shell"
-set $workspace2 "3. chrome"
-set $workspace3 "4. nemo"
-set $workspace3 "5. keepass"
-set $workspace4 "6. xmind"
-set $workspace6 "7. subl"
-set $workspace7 "8. vmware"
+set $workspace3 "3. chrome"
+set $workspace4 "4. nemo"
+set $workspace5 "5. keepass"
+set $workspace6 "6. subl"
+set $workspace7 "7. vmware"
+set $workspace8 "8. filezilla"
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -178,21 +178,31 @@ exec keepassx
 exec google-chrome
 exec gnome-terminal
 exec subl
-#exec nemo
-#exec vmware
-#exec pmixer
+exec nemo
+exec code
+exec clipit
+exec pnmixer
+exec synergy
+
+
+# Background wallpaper
+exec_always feh --bg-scale /path/to/wallpaper.jpg
 
 # Move apps to workspaces
+assign [class="Code"]           $workspace1
 assign [class="Gnome-terminal"] $workspace2 
-assign [class="Keepassx"]       $workspace3
-assign [class="XMind"]          $workspace4
-assign [class="Google-chrome"]  $workspace5
+assign [class="Google-chrome"]  $workspace3
+assign [class="Nemo"]		$workspace4
+assign [class="Keepassx"]       $workspace5
 assign [class="Sublime_text"]   $workspace6
-assign [class="Vmware"]         $workspace7
-assign [class="Nautilus"]	$workspace8
+assign [class="Vmware"]		$workspace7
+assign [class="Filezilla"]      $workspace8
 
-
+# Multi monitor configuration
+# check arandr or xrandr
 # turn off second monitor in i3
-exec xrandr --output DP-0 --auto
-exec xrandr --output DP-3 --off 
+# exec xrandr --output DP-0 --auto
+# xec xrandr --output DP-3 --off 
 
+# vmware support for i3 
+#exec vmware-user-suid-wrapper --no-startup-id
