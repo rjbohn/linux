@@ -12,9 +12,14 @@
 - sudo apt-get install oracle-java8-set-default
 
 ### golang
-- sudo add-apt-repository ppa:gophers/archive
-- sudo apt update
-- sudo apt-get install golang-1.9-go
+- sudo curl -O https://dl.google.com/go/go1.9.4.linux-amd64.tar.gz
+- sudo tar -xvf go1.9.4.linux-amd64.tar.gz
+- sudo mv go /usr/local
+- nano ~/.zshrc:
+    - export PATH=$PATH:/usr/local/go/bin
+    - export GOPATH=$HOME/projects/
+    - export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+- go version
 - go get github.com/derekparker/delve/cmd/dlv
 
 ### nemo
@@ -29,10 +34,14 @@
 - sudo apt-key fingerprint 0EBFCD88
 - sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 - sudo apt-get update
-- sudo apt-get install docker-ce
+- sudo apt-get install docker-
+
+# Oh-my-zsh
+- cd
+- sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+- sudo apt-get install fonts-powerline
 
 ### To download
 - xmind
 - virtualbox
 - i3lock-fancy
-- https://gist.github.com/renshuki/3cf3de6e7f00fa7e744a
