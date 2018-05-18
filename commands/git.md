@@ -47,3 +47,8 @@ git remote rename new-origin origin
 
 # cancel las commit
 git reset HEAD~1
+
+cd into/cloned/fork-repo
+git remote add upstream git://github.com/ORIGINAL-DEV-USERNAME/REPO-YOU-FORKED-FROM.git
+git fetch upstream
+git pull upstream master

@@ -59,3 +59,9 @@ gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
 
 #### rename partition
 - sudo e2label /dev/sdxN my_label
+
+
+
+* usermod -aG sudo username // add user to sudoers
+
+export LC_ALL="en_US.UTF-8"
