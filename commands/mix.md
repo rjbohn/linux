@@ -65,3 +65,5 @@ gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
 * usermod -aG sudo username // add user to sudoers
 
 export LC_ALL="en_US.UTF-8"
+
+find /path/to/files* -mtime +5 -exec rm {} \;

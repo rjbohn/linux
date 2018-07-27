@@ -1,35 +1,34 @@
-git config --global user.email "email"
-git config --global user.name "user"
-git config --global push.default simple
-ssh-keygen -t rsa -C "email"
-sudo apt-get install xclip
-xclip -sel clip < ~/.ssh/id_rsa.pub
-then paste the key to github
-eval `ssh-agent -s`
-ssh-add
+* git config --global user.email "email"
+* git config --global user.name "user"
+* git config --global push.default simple
 
-git fetch --all
-git rebase origin/master
-git push --force origin fUser
-git push -u origin <branch-name>
+* ssh-keygen -t rsa -C "email"
+* sudo apt-get install xclip
+* xclip -sel clip < ~/.ssh/id_rsa.pub
+* eval `ssh-agent -s`
+* ssh-add
 
-git branch
-git branch <new_branch>
-git checkout <existing-branch>
+* git fetch --all
+* git rebase origin/master
+* git push --force origin fUser
+* git push -u origin <branch-name>
 
-git add .
-git pull --rebase origin master
-git commit -a -m "" 
-git push
-git stash save
-git stash pop
+* git branch
+* git branch <new_branch>
+* git checkout <existing-branch>
 
-git rm --cached -r mydirectory
+* git add .
+* git pull --rebase origin master
+* git commit -a -m "" 
+* git push
+* git stash save
+* git stash pop
 
+* git rm --cached -r mydirectory
 
-git stash
-git checkout other-branch
-git stash pop
+* git stash
+* git checkout other-branch
+* git stash pop
 
 
 # color git
@@ -48,7 +47,9 @@ git remote rename new-origin origin
 # cancel las commit
 git reset HEAD~1
 
-cd into/cloned/fork-repo
-git remote add upstream git://github.com/ORIGINAL-DEV-USERNAME/REPO-YOU-FORKED-FROM.git
-git fetch upstream
-git pull upstream master
+# PR to a base from fork
+* fork a repo and  clone it and cd to forked repo
+* git remote add upstream <repo-location>
+* git fetch upstream
+* git rebase upstream/master
+* git push origin master
