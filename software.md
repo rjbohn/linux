@@ -41,7 +41,7 @@
 * sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
 * sudo chmod +x /usr/local/bin/docker-compose
 
-# Oh-my-zsh
+### oh-my-zsh
 * cd
 * sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 * sudo apt-get install fonts-powerline -y

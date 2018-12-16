@@ -37,33 +37,30 @@ SEARCH INSIDE FILE
 - cat files.txt | xargs rm -rf
 - find . -name "*.pyc" -exec rm -rf {} \;
 
-#### Show debian package dependencies
-- dpkg -I deb-package
+### Show debian package dependencies
+* dpkg -I deb-package
 
-#### turn off second monitor in i3
-- xrandr --output VGA-0 --auto
-- xrandr --output eDP-1-1 --off 
+### turn off second monitor in i3
+* xrandr --output VGA-0 --auto
+* xrandr --output eDP-1-1 --off 
 
-#### list view and close button on right
-sudo apt-get install gnome-session-fallback
-gsettings set org.gnome.desktop.wm.preferences button-layout ':minimize,maximize,close'
-gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
+### list view and close button on right
+* sudo apt-get install gnome-session-fallback
+* gsettings set org.gnome.desktop.wm.preferences button-layout ':minimize,maximize,close'
+* gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
 
-#### add user to the sudoers
-- gpasswd -a username sudo
+### add user to the sudoers
+* gpasswd -a username sudo
 
-#### default file/folder permission
-- find . -type d -exec chmod 0755 {} \;
-- find . -type f -exec chmod 0644 {} \;
-- sudo chmod -R a+rwX,o-w myfolder 
+### default file/folder permission
+* find . -type d -exec chmod 0755 {} \;
+* find . -type f -exec chmod 0644 {} \;
+* sudo chmod -R a+rwX,o-w myfolder 
 
-#### rename partition
-- sudo e2label /dev/sdxN my_label
+### rename partition
+* sudo e2label /dev/sdxN my_label
 
-
-
+### misc
 * usermod -aG sudo username // add user to sudoers
-
-export LC_ALL="en_US.UTF-8"
-
-find /path/to/files* -mtime +5 -exec rm {} \;
+* export LC_ALL="en_US.UTF-8"
+* find /path/to/files* -mtime +5 -exec rm {} \;
