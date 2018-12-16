@@ -1,13 +1,16 @@
+# config
 * git config --global user.email "email"
 * git config --global user.name "user"
 * git config --global push.default simple
 
+# gen ssh key pair
 * ssh-keygen -t rsa -C "email"
 * sudo apt-get install xclip
 * xclip -sel clip < ~/.ssh/id_rsa.pub
 * eval `ssh-agent -s`
 * ssh-add
 
+# fetch, rebase, and push
 * git fetch --all
 * git rebase origin/master
 * git push --force origin fUser
