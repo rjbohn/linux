@@ -1,4 +1,4 @@
-WGET
+### wget
 ===========
 wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e robots=off -U mozilla http://0.0.0.0:5000
 wget --recursive --no-clobber --page-requisites --html-extension --convert-links --restrict-file-names=windows --domains thewebsite.com --no-parent http://0.0.0.0:5000
@@ -6,17 +6,14 @@ wget --random-wait -r -p -e robots=off -U mozilla http://url
 wget --recursive --no-clobber --page-requisites --html-extension --convert-links --restrict-file-names=windows --domains domain.org --no-parent http://url
 wget --recursive --no-clobber --page-requisites --html-extension --convert-links --restrict-file-names=windows --domains domain.fr --no-parent http://url --user <user> --password <pass>
 
-SUPERVISOR
-==========
-sudo supervisorctl stop YOURAPP:*
+### SUPERVISOR
+* sudo supervisorctl stop YOURAPP:*
 
-
-TOR
-===
-sudo nano /etc/tor/torrc
-uncomment hashPassword
-uncomment ControlPort
-sudo /etc/init.d/tor restart
+### TOR
+* sudo nano /etc/tor/torrc
+* uncomment hashPassword
+* uncomment ControlPort
+* sudo /etc/init.d/tor restart
 
 tor --hash-password PASS
 
